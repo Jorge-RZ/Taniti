@@ -1,0 +1,742 @@
+:root {
+    --main-color1: black;
+    --main-color2: white;
+    --main-color3: #f1e6c6;
+    --main-color4: #009DC4;
+    --main-color5: #ff9f1c;
+    --main-color6: #fff7ed;
+    --main-color7: darkblue;
+    ;
+
+
+}
+
+html {
+    font-size: 16px;
+}
+
+Main {
+    margin: 0px;
+}
+
+/*Misc...*/
+nav h3 {
+    margin: 0px;
+    color: var(--main-color1);
+}
+
+/*navigation*/
+#priamaryNavHomeButton {
+    font-size: 2rem;
+    color: var(--main-color4);
+    padding-left: 20px;
+
+
+}
+
+#priamaryNavHomeButton a:visited {
+    color: var(--main-color4);
+
+}
+
+#primaryNav a {
+    text-decoration: none;
+    color: var(--main-color1)
+}
+
+#primaryNav a:hover {
+    color: var(--main-color4);
+}
+
+
+
+#primaryNav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100px;
+    flex-wrap: nowrap;
+    padding-bottom: 20px;
+    padding-top: 5px;
+
+}
+
+.primaryNavChild {
+
+    width: auto;
+    height: auto;
+    text-align: left;
+
+}
+
+.primaryNavChild:nth-child(1) {
+    width: 60%;
+}
+
+#nestedNavParent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+
+    gap: 0px;
+
+}
+
+.nestedNavChild {
+    color: var(--main-color1);
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+.nestedNavChild h3 {
+    font-size: 1.15rem;
+}
+
+.nestedNavChild a:visited {
+    color: var(--main-color1);
+}
+
+.navSearch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+}
+
+
+/*Dynamic navigation */
+.navUl {
+    display: none;
+    font-size: 1rem;
+
+}
+
+#navPlanning:hover #navPlanningUl {
+    display: block;
+}
+
+#navAttractions:hover #navAttractionsUl {
+    display: block;
+}
+
+#navEntertainment:hover #navEntertainmentUl {
+    display: block;
+
+}
+
+
+/*breadcrumb trails*/
+
+.breadcrumb {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--main-color1);
+
+}
+
+.breadcrumb a:visited {
+    color: var(--main-color1);
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: var(--main-color4);
+}
+
+
+/*footer*/
+.footerParent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding-top: 300px;
+    gap: 20px;
+}
+
+.footerChild {
+    color: var(--main-color1);
+    text-align: left;
+    width: auto;
+    height: auto;
+}
+
+.footerChild:nth-child(1) {
+    min-width: 60px;
+}
+
+nav ul,
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--main-color1);
+
+}
+
+footer a:visited {
+    color: var(--main-color1);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--main-color4);
+}
+
+/*hompage*/
+#mainHomeImageSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    width: 100%;
+    background-image: url('../images/beach4.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+
+}
+
+#mainHomeTitle {
+    color: var(--main-color2);
+    font-size: 4rem;
+    /*font-size: clamp(2rem, 5vw, 4rem);*/
+    text-align: center;
+    margin: 0;
+
+}
+
+#mainHomeImageSection p {
+    text-align: center;
+    color: var(--main-color2);
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0px;
+}
+
+
+.subHomeParent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.subHomeChild {
+    padding-top: 70px;
+    color: var(--main-color1);
+    text-align: center;
+    margin: 0;
+    width: auto;
+}
+
+.subHomeChild a {
+    text-decoration: none;
+    color: var(--main-color1);
+}
+
+.subHomeChild a:visited {
+    color: var(--main-color1);
+}
+
+.subHomeChild a:hover {
+    color: var(--main-color4);
+}
+
+.images1 {
+    min-width: 175px;
+    min-height: 150px;
+    height: 40vh;
+    width: 50vh;
+    max-width: 800px;
+}
+
+.homeSubHeader {
+
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 2.5rem;
+    margin: 0;
+    border: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.citationP {
+    margin-top: 0px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/*header Pages*/
+.headerPagesColor .breadcrumb {
+    background-color: var(--main-color3);
+}
+
+.headerPagesColor main {
+    background-color: var(--main-color3);
+}
+
+.headerPagesColor footer {
+    background-color: var(--main-color3);
+}
+
+.headerPagesTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.headerPagesParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    background-color: var(--main-color3)
+}
+
+.headerPagesChild {
+    width: 50%;
+    height: 100%;
+}
+
+.headerPagesChild img {
+    position: sticky;
+    height: 80vh;
+    width: 100%;
+    max-height: 300px;
+}
+
+.headerPagesChildP {
+    max-width: 300px;
+    text-align: left;
+}
+
+.headerPagesChild:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    order: 1;
+
+}
+
+.headerPagesChild:nth-child(2) {
+    order: 2;
+}
+
+.headerPagesChild:nth-child(3) {
+    order: 3;
+}
+
+.headerPagesChild:nth-child(4) {
+    order: 4;
+    display: flex;
+    justify-content: center;
+}
+
+.headerPagesChild:nth-child(5) {
+    order: 5;
+    display: flex;
+    justify-content: center;
+}
+
+.headerPagesChild:nth-child(6) {
+    order: 6;
+}
+
+.headerPagesChild:nth-child(7) {
+    order: 7;
+}
+
+.headerPagesChild:nth-child(8) {
+    order: 8;
+    display: flex;
+    justify-content: center;
+}
+
+.headerPagesCitation {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.headerPagesChildP a {
+    text-decoration: none;
+    color: var(--main-color1);
+
+}
+
+.headerPagesChildP a:visited {
+    color: var(--main-color1);
+}
+
+.headerPagesChildP a:hover {
+    text-decoration: underline;
+    color: var(--main-color4);
+}
+
+/*last Pages */
+.lastPageParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.lastPageChild {
+    min-width: 250px;
+    max-width: 80vh;
+    text-align: left;
+    height: auto;
+
+}
+
+.lastPageChild:nth-child(1) {
+    text-align: center;
+
+}
+
+.image3Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image3Item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 300px;
+    flex: 0 0 300px;
+    height: auto;
+    max-width: 100%;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.image3 {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+
+}
+
+.image3Item a {
+    text-decoration: none;
+    color: var(--main-color1);
+
+}
+
+.image3Item a:visited {
+    color: var(--main-color1);
+}
+
+.image3Item a:hover {
+    text-decoration: underline;
+    color: var(--main-color4);
+}
+
+/*reference page*/
+.referencePageParent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.referencePageChild {
+    max-width: 600px;
+
+}
+
+.referencePageP {
+    padding-left: 36px;
+    text-indent: -36px;
+
+}
+
+.referencePageA {
+    display: inline-block;
+    max-width: 100%;
+    text-indent: 0px;
+    overflow-wrap: break-word;
+}
+
+/*anchor*/
+.commonAnchor {
+    text-decoration: none;
+    color: var(--main-color1);
+
+}
+
+.commonAnchor:visited {
+    color: var(--main-color1);
+}
+
+.commonAnchor:hover {
+    text-decoration: underline;
+    color: var(--main-color4);
+}
+
+@media screen and (max-width: 770.00px) {
+
+    /*homepage*/
+    .subHomeParent {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    /*headerPages*/
+    .headerPagesParent {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .headerPagesChild {
+
+        width: 100%;
+    }
+
+    .headerPagesChild img {
+        max-width: 500px;
+
+    }
+
+    .headerPagesChild a {
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .headerPagesChildP {
+        max-width: 500px;
+    }
+
+    .headerPagesChild p {
+        margin: 0px;
+    }
+
+    .headerPagesChild:nth-child(1) {
+        order: 1;
+
+    }
+
+    .headerPagesChild:nth-child(2) {
+        order: 2;
+
+    }
+
+    .headerPagesChild:nth-child(3) {
+        order: 4;
+    }
+
+    .headerPagesChild:nth-child(4) {
+        order: 3;
+    }
+
+    .headerPagesChild:nth-child(5) {
+        order: 5;
+    }
+
+    .headerPagesChild:nth-child(6) {
+        order: 6;
+    }
+
+    .headerPagesChild:nth-child(7) {
+        order: 8;
+    }
+
+    .headerPagesChild:nth-child(8) {
+        order: 7;
+    }
+
+    .headerPagesCitation {
+        text-align: center;
+    }
+
+    /*primagry nav */
+    #primaryNav {
+        height: 130px;
+    }
+
+    /*last page*/
+
+    .image3Container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+
+    /*reference page*/
+    .referencePageChild:nth-child(1) {
+        text-align: center;
+    }
+
+    .referencePageChild {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 500.00px) {
+
+    /*homepage*/
+    .subHomeChild {
+        width: 100%;
+    }
+
+    .images1 {
+        width: 100%;
+        min-width: 100px;
+    }
+
+    body {
+        margin-top: 160px;
+    }
+
+    /*mobile navigation */
+    #mobilePrimaryNav {
+
+        position: fixed;
+        width: 100%;
+        overflow: none;
+        top: 0;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    #primaryNav {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .primaryNavChild {
+        padding-left: 5px;
+    }
+
+    .primaryNavChild:nth-child(1) {
+        width: 100%;
+    }
+
+    #nestedNavParent {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 0px;
+
+    }
+
+    .nestedNavChild {
+        width: 100%;
+        padding-left: 4px;
+        flex-shrink: 1;
+        flex-grow: 0;
+        border-top: 2px solid black;
+        border-right: none;
+        border-bottom: none;
+        border-left: none;
+    }
+
+    .nestedNavChild h3 {
+        font-size: .9rem;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .nestedNavChild li {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: .8rem;
+    }
+
+    #priamaryNavHomeButton {
+        padding-left: 4px;
+        font-size: 1rem;
+    }
+
+    .navSearch {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-right: 20px;
+        padding-top: 3px;
+    }
+
+    /*mobile footer*/
+    .footerParent {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .footerChild {
+        width: 50%;
+        text-align: center;
+
+    }
+
+    .footerLi {
+        padding: 5px;
+    }
+
+
+}
